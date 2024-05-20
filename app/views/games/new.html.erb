@@ -2,7 +2,7 @@
 <h2>Current Score: <%= @session[:score] %></h2>
 <div class="letters-container">
 <% @letters.each  do |letter| %>
-<div class="letter"><%= letter %></div>
+<li class="letter"><%= letter %></li>
 <% end %>
 </div>
 <form action="/score" method="POST" data-turbo="false">
